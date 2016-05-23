@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>A lonely Orb</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="aureaboros Jérémy Cortes">
+	<link rel="stylesheet" type="text/css" media="all" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/foundation.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+
+<body>
+
+	<!-- LOGO -->
+	<h1 class="logo"><a target="_blank" href="http://aureaboros.com/"><img src="textures/Au.png" alt="Aureaboros logo"></a></h1>
+
+	<!-- UI -->
+	<section class="ui">
+
+		<article class="ui--starting animated">
+			<div class="loading-title animated fadeIn">
+				<h1 class="animated fadeInUp">A lonely Orb</h1>
+				<h3 class="animated fadeInUp">Visualisation des fréquences audio d'une musique en temps réel.</h3>
+				<p class="animated fadeInUp">Veuillez choisir une qualité pour continuer :</p>
+			</div>
+			<div class="loading-container animated fadeIn">
+				<div class="button Qlow animated fadeInUp">FAIBLE</div>
+				<div class="button Qmed animated fadeInUp">NORMAL</div>
+				<div class="button Qhgt animated fadeInUp">MAXIMUM</div>
+			</div>
+			<div class="loading-song animated fadeIn">
+				<h1 class="animated fadeInUp">Clique et glisse à l'intérieur de la zone bleue ta musique préférée (.mp3)</h1>
+				<p class="infoDropping animated fadeInUp">
+					<p>
+						<div class="btn disabled confirmQ animated fadeInUp">Lancer</div>
+			</div>
+			</div>
+		</article>
+
+		<article class="freezer animated fadeIn">
+			<h1>Chargement en cours ... Il peut se produire des petits freeze durant le chargement ( 5-15 secondes )</h1>
+		</article>
+
+		<div id="controlsAudio" class="animated fadeIn">
+			<div class="controls">
+				<div class='container'>
+					<a href='#' id="playAudio" class='playBut new'>
+						<svg version="1.1" id="controls" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+							<polygon class="triangle" points="97.356,89.214 202.644,150 97.356,210.786 " />
+							<circle class="circle" cx="149.93" cy="149.93" r="145.016" />
+							<line class="line" x1="123.5" y1="89.214" x2="123.5" y2="211.119" />
+							<line class="line" x1="176.333" y1="211.119" x2="176.333" y2="89.214" />
+						</svg>
+						<span>Boutton jouer, raccourci : Barre espace</span>
+					</a>
+				</div>
+				<h2 id="musicTitle"></h2>
+				<a class="screenShot">
+					<i class="fa fa-camera fa-2x" aria-hidden="true"></i>
+					<span>Capture d'écran, raccourci : p</span>
+				</a>
+			</div>
+			<div class="musicTotal">
+				<span class="musicTime"></span>
+			</div>
+		</div>
+		<div class="debug"></div>
+		<!--
+		<div class="audioDebug">
+			<p id="Treble">Treble :</p>
+			<p id="Medium">Medium :</p>
+			<p id="Bass">Bass :</p>
+		</div>
+-->
+
+		<article class="ui--ending animated fadeIn">
+
+			<div class="loading-title animated fadeIn">
+				<p class="animated fadeInUp">Merci d'avoir joué à ma première expérience avec Webgl.</p>
+				<p class="animated fadeInUp">Je posterai le code en clair et plus propre sur GitHub plus tard.</p>
+				<p class="animated fadeInUp">Vous pouvez continuer sur mon portfolio en cliquant sur l'image ci-dessous.</p>
+				<h1><a target="_blank" href="http://aureaboros.com/"><img class="portLogo" src="textures/Au.png" alt="Aureaboros logo"></a></h1>
+			</div>
+			<div class="footer-social-icons">
+				<ul class="social-icons">
+					<li>
+						<a target="_blank" href="https://twitter.com/CortesHub" class="social-icon"> <i class="fa fa-twitter"></i></a>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+	</section>
+
+	<div id="container"></div>
+
+
+	<script type="text/javascript">
+		function a() {
+			var b = document.createElement("script");
+			b.src = "defer.js";
+			document.body.appendChild(b);
+		}
+		window.addEventListener ? (window.addEventListener("load", a, false)) : (window.attachEvent ? (window.attachEvent("onload", a)) : (window.onload = a));
+	</script>
+</body>
+</html>
