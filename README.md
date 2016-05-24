@@ -16,4 +16,4 @@ La démarche artistique réside dans le résultat de l'influence de la musique sur 
 Logiciels utilisés : Brackets
 
 
-Les tests pour arriver au 60 fps en qualité Basique ont été réalisés sur un MSI avec un CPU i5-4210H (2.9GHz),  GPU  GTX 850M (1920x1080). (Ordinateur portable entrée de gamme).
+Les tests pour arriver au 60 fps en qualité Basique ont été réalisés sur un MSI avec un CPU i5-4210H (2.9GHz),  GPU  GTX 850M (1920x1080). (Ordinateur portable entrée de gamme). 
